@@ -1,0 +1,139 @@
+/* Reset padrão */
+ * {
+  margin: 0;
+  padding: 0;
+}
+/* Configurando o corpo do site */
+body {
+  background: #4584d1;
+  font-family: 'Arial', sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  text-align: center;
+}
+/* Área principal */
+.container {
+  background-color: #fff;
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.3);
+  margin: 1em auto;
+  padding: 15px 32px;
+  width: 400px;
+}
+/* Mensagem para o usuário */
+.recado {
+  background-color: #fff2ae;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  line-height: 1.45em;
+  margin: 35px auto 18px auto;
+  padding: 18px;
+  width: 90%;
+}
+/* Título da página */
+h1 {
+  font-size: 2.45em; 
+  margin: 0.75em 0;
+  color: #fff;
+  font-weight: bolder;
+}
+/* Configurando os campos de digitação e seleção */
+input[type="number"], select {
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: 0.6em;
+  outline: none;
+  width: 100%;
+}
+input[type="number"]:focus {
+  border-color: #0facf3;
+  transition: 0.25s;
+}
+/* Rótulos dos campos do formulário */
+label {
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+/* Configurando o botão */
+input[type="submit"] {
+  background-color: #0facf3;
+  border: 2px solid #0b7eb1;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 2em auto;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+/* Adicionando efeito ao botão */
+input[type="submit"]:hover { 
+  background-color: #0b7eb1;
+  border-color: #095e85;
+  transition: all 0.3s;
+}
+/* Inserindo estilo quando o botão estiver em foco */
+input[type="submit"]:focus{ outline: 2px solid gold; }
+.formgroup {
+  margin: 1em auto;
+  text-align: left;
+  max-width: 230px;
+}
+#tabuada { 
+  margin: 0.5em auto; 
+  line-height: 1.5em;
+}
+/* Configurando nosso rodapé */
+footer {
+  color: #fff; 
+  margin: 1.3em;
+}
+/* Ícones para redes sociais */
+.fa {
+  color: #fff;
+  font-size: 1.25em !important;
+  padding: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+}
+/* Definindo transição */
+.fa:hover {
+  transition: all 0.35s;
+}
+/* Cor verde para o Whatsapp */
+.fa-whatsapp:hover,
+.fa-whatsapp:focus { 
+  background-color: #00b489;
+  border-color: #00b489;
+}
+/* Cor vermelha alaranjada para o Instagram */
+.fa-instagram:hover,
+.fa-instagram:focus { 
+  background-color: tomato;
+  border-color: tomato;
+}
+/* Cor azul para o Facebook */
+.fa-facebook:hover,
+.fa-facebook:focus  { 
+  background-color: #3B5998;
+  border-color: #3B5998;
+}
+/* Cor vermelha para o YouTube */
+.fa-youtube:hover,
+.fa-youtube:focus { 
+  background-color: #bb0000;
+  border-color: #bb0000;
+}
+/* Deixando a visualização melhor em telas menores */
+@media all and (max-width: 700px) {
+  .container { width: 75%; }
+}
+</style>
